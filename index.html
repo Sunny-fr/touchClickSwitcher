@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+	<title>touch or mouse</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="touchswitch.js"></script>
+	<style type="text/css">
+		body{
+			font:12px Arial, Helvetica, sans-serif ;
+		}
+		.viewport{
+			background:url(http://sunny.fr/img/droid.jpg) top left ;
+			height:230px;
+			width: 570px;
+			border:1px solid #333;
+		}
+
+		.viewport *{
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-o-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			
+		}
+		.ball{
+			position: absolute;
+			top:0px;
+			left:0px;
+			width:50px;
+			height:50px;
+			border-radius: 100px;
+			text-align: center;
+
+
+				background: -moz-linear-gradient(top,  rgba(255,255,255,0.37) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.37)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  rgba(255,255,255,0.37) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  rgba(255,255,255,0.37) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  rgba(255,255,255,0.37) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+			background: linear-gradient(top,  rgba(255,255,255,0.37) 0%,rgba(255,255,255,0) 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5effffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
+
+
+
+
+
+
+			box-shadow: 0 0 4px rgba(0,0,0,.3);
+			cursor: pointer;
+
+		}
+		.ball:hover{
+			box-shadow: 0 0 6px rgba(0,0,0,.8);
+		}
+		.ball strong{
+			font-size:20px;
+			line-height: 48px;
+			font-weight: bold;
+			font-family: Georgia;
+			color:#333;
+			text-shadow: 0 1px 0 rgba(255,255,255,.4);
+		}
+	</style>
+</head>
+<body>
+
+	<div class="viewport">
+
+	</div>
+</body>
+</html>
